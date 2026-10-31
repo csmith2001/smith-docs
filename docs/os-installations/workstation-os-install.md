@@ -1,1 +1,5 @@
-# Installing Fedora on a Workstation
+---
+icon: lucide/pc-case
+---
+
+# Workstation OS Installation
