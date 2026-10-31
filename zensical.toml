@@ -21,16 +21,21 @@ nav = [
       { "Markdown in 5min" = "markdown.md" },
       { "Zensical in 5min" = "zensical.md" }
     ]},
-    { "OS Installs" = [
-      { "Workstations" = "os-installations/workstation-os-install.md" },
-      { "Servers" = "os-installations/server-os-install.md" },
-      { "Virtual Machines" = "os-installations/vm-os-install.md" },
-      { "Domain Controllers" = "os-installations/domain-controller-os-install.md" }
-    ]},
-    { "Tool Installs" = [
-      { "Ventoy" = "tool-installations/ventoy.md" },
-      { "VS Code" = "tool-installations/vs-code.md" }
-    ]},
+    { "Installation Guides" = [
+      { "OS Media" = [
+        { "Fedora Everything" = "os-installations/installation-media/linux/fedora-everything.md"}
+      ]},
+      { "OS Installs" = [
+        { "Workstations" = "os-installations/hardware-specific/workstation-os-install.md" },
+        { "Servers" = "os-installations/hardware-specific/server-os-install.md" },
+        { "Virtual Machines" = "os-installations/hardware-specific/vm-os-install.md" },
+        { "Domain Controllers" = "os-installations/hardware-specific/domain-controller-os-install.md" }
+      ]},
+      { "Tool Installs" = [
+        { "Ventoy" = "tool-installations/ventoy.md" },
+        { "VS Code" = "tool-installations/vs-code.md" }
+      ]},
+    ]}
   ]},
   { "Infrastructure" = [
     { "Hardware" = [

@@ -4,7 +4,8 @@ icon: lucide/save-plus
 
 # Ventoy
 
-[Ventoy](https://www.ventoy.net/en/index.html) is an open source tool used to create on-the-go bootable USB drives.
+[Ventoy](https://www.ventoy.net/en/index.html) is an open source tool
+used to create on-the-go bootable USB drives.
 
 It supports the following file formats:
 
@@ -14,9 +15,12 @@ It supports the following file formats:
 * VHD(x)
 * EFI
 
-Using Ventoy, there is no need to reformat the same disk over and over anymore. Simply drag-and-drop files to the USB drive and boot directly.
+Using Ventoy, there is no need to reformat the same disk over and over anymore.
+Simply drag-and-drop files to the USB drive and boot directly.
 
-You can copy as many files as your drive can hold, and can store them in any folder structure you like. Ventoy provides a Grub Boot menu to select which media you want to boot into.
+You can copy as many files as your drive can hold, and can store them in any
+folder structure you like. Ventoy provides a Grub Boot menu to select which
+media you want to boot into.
 
 ## Installation
 
@@ -31,7 +35,8 @@ You can copy as many files as your drive can hold, and can store them in any fol
 
 ### Mirror Site
 
-* This will bring you to a SourceForge mirror site. Select the same versioned `tar.gz` file:
+* This will bring you to a SourceForge mirror site. Select the same versioned
+`tar.gz` file:
 
 !!! example
 
