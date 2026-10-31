@@ -25,17 +25,23 @@ You can copy as many files as your drive can hold, and can store them in any fol
 * Visit the [downloads](https://www.ventoy.net/en/download.html) page
 * Select the most recent binary:
 
-  ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-1.png)
+!!! example
+
+    ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-1.png)
 
 ### Mirror Site
 
 * This will bring you to a SourceForge mirror site. Select the same versioned `tar.gz` file:
 
-  ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-2.png)
+!!! example
+
+    ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-2.png)
 
 * Expected result:
 
-  ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-3.png)
+!!! example
+
+    ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-3.png)
 
 ---
 
@@ -43,44 +49,54 @@ You can copy as many files as your drive can hold, and can store them in any fol
 
 * Open a terminal (`CTRL` + `ALT` + `T`):
 
-  ![Terminal Opened](../images/common/open-terminal.png)
+!!! example
+
+    ![Terminal Opened](../images/common/open-terminal.png)
 
 * Extract the archive in `~/Downloads`:
 
-```shell
-  cd ~/Downloads
-  ls -lh
-  tar -xzf ventoy-*.tar.gz
-  rm -rf ventoy-*.tar.gz
-  ls -lh
-  cd ventoy-*
-```
+!!! example
 
-  ![Extract Archive](../images/ventoy/extract-archive.png)
+    ```shell
+      cd ~/Downloads
+      ls -lh
+      tar -xzf ventoy-*.tar.gz
+      rm -rf ventoy-*.tar.gz
+      ls -lh
+      cd ventoy-*
+    ```
+
+    ![Extract Archive](../images/ventoy/extract-archive.png)
 
 * Insert the USB drive
 * Identify the device:
 
-```shell
-  lsblk -f
-```
+!!! example
 
-  ![Find Block Devices](../images/common/find-usb.png)
+    ```shell
+      lsblk -f
+    ```
+
+    ![Find Block Devices](../images/common/find-usb.png)
 
 * Switch to `csmith-admin` (don't include `-` to keep current `pwd`):
 
-```shell
-  su csmith-admin
-```
+!!! example
+
+    ```shell
+      su csmith-admin
+    ```
 
 * Run script:
 
-```shell
-  sudo ./Ventoy2Disk.sh -i /dev/sdX
-  exit
-```
+!!! example
 
-  ![Ventoy2Disk.sh](../images/ventoy/ventoy2disk.png)
+    ```shell
+      sudo ./Ventoy2Disk.sh -i /dev/sdX
+      exit
+    ```
+
+    ![Ventoy2Disk.sh](../images/ventoy/ventoy2disk.png)
 
 ## Validation
 
@@ -92,4 +108,6 @@ You can copy as many files as your drive can hold, and can store them in any fol
 
 * Expected result:
 
-  ![Find Ventoy Media](../images/ventoy/find-ventoy.png)
+!!! example
+
+    ![Find Ventoy Media](../images/ventoy/find-ventoy.png)
