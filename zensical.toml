@@ -1,32 +1,71 @@
+# -----------------------------------------------------------------
+# === PROJECT CONFIGURATION ===
 [project]
 #site_url = "https:smith-lab.xyz/docs"
-site_name = "Documentation"
-# site_description = "Your project description"
-# site_author = "Your name"
+site_name = "Smith Lab Documentation"
+site_description = "Smith Lab project documentation, Home Lab docs, and more!"
+site_author = "Christopher Smith"
 
 # copyright = "Copyright &copy; 2026 Your name"
 
-# repo_url = "https://github.com/user/repo"
-# repo_name = "user/repo"
-# edit_uri = "edit/main/docs/"
+repo_url = "https://gitlab.com/csmith2001/smith-docs"
+repo_name = "csmith2001/smith-docs"
+edit_uri = "edit/main/docs/"
 
+# -----------------------------------------------------------------
+# === PAGE NAVIGATION ===
 nav = [
-  { "Get started" = "index.md" },
-  { "Markdown in 5min" = "markdown.md" },
+  { "Home" = "index.md" },
+  { "Getting Started" = [
+    { "5min Guides" =[
+      { "Markdown in 5min" = "markdown.md" },
+      { "Zensical in 5min" = "zensical.md" }
+    ]},
+    { "OS Installs" = [
+      { "Workstations" = "os-installations/workstation-os-install.md" },
+      { "Servers" = "os-installations/server-os-install.md" },
+      { "Virtual Machines" = "os-installations/vm-os-install.md" },
+      { "Domain Controllers" = "os-installations/domain-controller-os-install.md" }
+    ]},
+    { "Tool Installs" = [
+      { "Ventoy" = "tool-installations/ventoy.md" },
+      { "VS Code" = "tool-installations/vs-code.md" }
+    ]},
+  ]},
+  { "Infrastructure" = [
+    { "Hardware" = [
+      { "Servers" = [
+        { "smith-lab-dc01" = "infrastructure/hardware/servers/smith-lab-dc01.md"},
+        { "smith-lab-app01" = "infrastructure/hardware/servers/smith-lab-app01.md"},
+        { "smith-lab-runner01" = "infrastructure/hardware/servers/smith-lab-runner01.md"}
+      ]},
+      { "Workstations" = [
+        { "fedora-desktop" = "infrastructure/hardware/workstations/fedora-desktop.md"},
+        { "fedora-laptop" = "infrastructure/hardware/workstations/fedora-laptop.md"}
+      ]},
+      { "Other" = [
+        { "Reolink NVR" = "infrastructure/hardware/other/reolink.md"}
+      ]}
+    ]}
+  ]}
 ]
 
+# -----------------------------------------------------------------
+# === ADDITIONAL LOGIC ===
 # extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
 
+# -----------------------------------------------------------------
+# === CUSTOMIZATION ===
 [project.theme]
 # variant = "classic"
-# custom_dir = "overrides"
-# favicon = "images/favicon.png"
+custom_dir = "overrides"
+favicon = "images/favicon.png"
 language = "en"
 features = [
   "announce.dismiss",
-  # "content.action.edit",
-  # "content.action.view",
+  "content.action.edit",
+  "content.action.view",
   "content.code.annotate",
   "content.code.copy",
   "content.code.select",
@@ -34,17 +73,17 @@ features = [
   "content.tabs.link",
   "content.tooltips",
   # "header.autohide",
-  # "navigation.expand",
+  "navigation.expand",
   "navigation.footer",
   "navigation.indexes",
   "navigation.instant",
   "navigation.instant.prefetch",
-  # "navigation.instant.progress",
+  "navigation.instant.progress",
   "navigation.path",
-  # "navigation.prune",
+  "navigation.prune",
   "navigation.sections",
-  # "navigation.tabs",
-  # "navigation.tabs.sticky",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
   "navigation.top",
   "navigation.tracking",
   "search.highlight",
@@ -52,14 +91,14 @@ features = [
   # "toc.integrate",
 ]
 
-# logo = "assets/logo.png"
+# logo = "images/favicon.png"
 
-# [project.theme.icon]
-# logo = "lucide/smile"
+[project.theme.icon]
+logo = "bootstrap/lobo"
 
-# [project.theme.font]
-# text = "Inter"
-# code = "Jetbrains Mono"
+[project.theme.font]
+text = "Inter"
+code = "Jetbrains Mono"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
@@ -75,17 +114,33 @@ toggle.name = "Switch to dark mode"
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
-toggle.icon = "lucide/moon"
+toggle.icon = "lucide/moon-star"
 toggle.name = "Switch to system preference"
 
-# [[project.extra.social]]
-# icon = "fontawesome/brands/github"
-# link = "https://github.com/user/repo"
+# -----------------------------------------------------------------
+# === SOCIALS ===
+[[project.extra.social]]
+icon = "fontawesome/brands/gitlab"
+link = "https://gitlab.com/csmith2001"
 
-# [[project.extra.social]]
-# icon = "fontawesome/brands/mastodon"
-# link = "https://fosstodon.org/@user"
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/csmith2001"
 
+[[project.extra.social]]
+icon = "fontawesome/brands/git-alt"
+link = "https://git.smith-lab.xyz"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/git-alt"
+link = "https://invent.kde.org/csmithtwothousandone"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/@Christopher.Smith16"
+
+# -----------------------------------------------------------------
+# === EXTENSIONS ===
 [project.markdown_extensions]
 abbr = {}
 admonition = {}
@@ -100,6 +155,9 @@ pymdownx.caret = {}
 pymdownx.details = {}
 pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
 pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.emoji.options.custom_icons = [
+  "overrides/.icons",
+]
 pymdownx.highlight.anchor_linenums = true
 pymdownx.highlight.line_spans = "__span"
 pymdownx.highlight.pygments_lang_class = true
