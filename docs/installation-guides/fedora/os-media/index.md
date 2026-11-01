@@ -9,7 +9,7 @@ icon: lucide/save
 !!! warning
 
     If you do not already have a iso image on a [Ventoy](https://www.ventoy.net/en/index.html)
-    stick, please refer to the [Ventoy installation guide](../../../../tools/os-tools/ventoy.md).
+    stick, please refer to the [Ventoy installation guide](../../tools/os-tools/ventoy/index.md).
 
 Navigate to fedoraproject.org:
 

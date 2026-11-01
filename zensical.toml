@@ -27,42 +27,6 @@ nav = [
     ]}
   ]},
 
-  { "Installation Guides" = [
-    { "Installation Guides" = "installation-guides/index.md"},
-    { "OS Installs" =[
-      { "Linux" = [
-        { "Linux" = "installation-guides/os-installs/linux/index.md" },
-        { "Fedora" = [
-          { "Fedora" = "installation-guides/os-installs/linux/fedora/index.md" },
-          { "OS Media" = [
-            { "Fedora Everything" = "installation-guides/os-installs/linux/fedora/os-media/fedora-everything.md" }
-          ]},
-          { "Hardware Specific Installs" = [
-            { "Domain Controllers" = "installation-guides/os-installs/linux/fedora/hardware-specific/domain-controllers/domain-controllers.md" },
-            { "Servers" = "installation-guides/os-installs/linux/fedora/hardware-specific/servers.md" },
-            { "Virtual Machines" = "installation-guides/os-installs/linux/fedora/hardware-specific/vms.md" },
-            { "Workstations" = "installation-guides/os-installs/linux/fedora/hardware-specific/workstations.md" }
-          ]}
-        ]},
-        { "Debian" = [
-          { "Debian" = "installation-guides/os-installs/linux/debian/index.md"},
-          { "OS Media" = [
-            { "Debian Network Installer" = "installation-guides/os-installs/linux/debian/os-media/debian-netinst.md" }
-          ]}
-        ]}
-      ]},
-    ]},
-
-    { "Tool Installs" = [
-      { "OS Tools" = [
-        { "Ventoy" = "installation-guides/tools/os-tools/ventoy.md" }
-      ]},
-      { "Code Editors" = [
-        { "VS Code" = "installation-guides/tools/code-editors/vs-code.md" }
-      ]}
-    ]},
-  ]},
-
   { "Infrastructure" = [
     { "Infrastructure" = "infrastructure/index.md"},
     { "Domain Controllers" =[
@@ -78,6 +42,64 @@ nav = [
     ]},
     { "Other" =[
       { "Reolink NVR" = "infrastructure/other/reolink.md" }
+    ]}
+  ]},
+
+  { "Installation Guides" = [
+    { "Fedora" = [
+      { "OS Media" = [
+        { "Media Installation" = "installation-guides/fedora/os-media/index.md" }
+      ]},
+      { "Hardware Specific Installs" = [
+        { "Domain Controllers" = [
+          { "DC Install Guide" = "installation-guides/fedora/hardware-specific/domain-controllers/index.md" },
+        ]},
+        { "Servers" = [
+          { "Server Install Guide" = "installation-guides/fedora/hardware-specific/servers/index.md" }
+        ]},
+        { "Virtual Machines" = [
+          { "VM Install Guide" = "installation-guides/fedora/hardware-specific/virtual-machines/index.md" }
+        ]},
+        { "Workstations" = [
+          { "Workstation Install Guide" = "installation-guides/fedora/hardware-specific/workstations/index.md" }
+        ]},
+      ]}
+    ]},
+    { "Debian" = [
+      { "OS Media" = [
+        { "Media Installation" = "installation-guides/debian/os-media/index.md" }
+      ]},
+    ]},
+    { "Tools" = [
+      { "OS Tools" = [
+        { "Ventoy" = [
+          { "Ventoy Install Guide" = "installation-guides/tools/os-tools/ventoy/index.md" }
+        ]},
+      ]},
+      { "Code Editors" = [
+        { "Visual Studio Code" = [
+          { "VS Code Install Guide" = "installation-guides/tools/code-editors/vscode/index.md" }
+        ]},
+        { "Vim/Neovim" = [
+          { "Vim Install Guide" ="installation-guides/tools/code-editors/vim-neovim/index.md" }
+        ]},
+      ]}
+    ]}
+  ]},
+
+  { "Setup Guides" = [
+    { "Setup Guides" = "setup-guides/index.md" },
+    { "OS Setups" = [
+      { "Fedora" = [
+        { "First Boot" = [
+          { "Domain Controllers" = [
+            { "DC First Boot" = "setup-guides/os-setups/fedora/first-boots/domain-controllers/index.md" }
+          ]},
+        ]}
+      ]},
+      { "Debian" = [
+        { "TODO" = "setup-guides/os-setups/debian/"}
+      ]}
     ]}
   ]}
 ]
