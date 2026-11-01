@@ -9,7 +9,7 @@ icon: lucide/save
 !!! warning
 
     If you do not already have a iso image on a [Ventoy](https://www.ventoy.net/en/index.html)
-    stick, please refer to the [Ventoy installation guide](../os-media/fedora-everything.md).
+    stick, please refer to the [Ventoy installation guide](../hardware-specific/domain-controllers/fedora-everything.md).
 
 Navigate to fedoraproject.org:
 
