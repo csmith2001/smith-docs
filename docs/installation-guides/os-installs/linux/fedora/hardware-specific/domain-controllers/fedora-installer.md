@@ -2,7 +2,7 @@
 
 !!! warning
 
-    Please refer to the [previous guide](../os-media/fedora-everything.md) if
+    Please refer to the [previous guide](../../os-media/fedora-everything.md) if
     you have not installed Fedora Everything.
 
 As of now, the preferred distribution of choice is [Fedora](https://fedoraproject.org/).
