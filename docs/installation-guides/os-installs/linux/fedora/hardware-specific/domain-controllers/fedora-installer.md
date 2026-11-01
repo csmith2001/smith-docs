@@ -15,7 +15,7 @@ above if you do not have it installed.
 
 ## Install Steps
 
-* Download, install, and flash USB drive with [Ventoy](../../../../../tools/os-tools/ventoy.md)
+* Download, install, and flash USB drive with [Ventoy](../../../../tools/os-tools/ventoy.md)
 * Download and transfer [Fedora Everything](../os-media/fedora-everything.md)
   to Ventoy USB
 * Power down target device
