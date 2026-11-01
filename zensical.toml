@@ -38,7 +38,7 @@ nav = [
             { "Fedora Everything" = "installation-guides/os-installs/linux/fedora/os-media/fedora-everything.md" }
           ]},
           { "Hardware Specific Installs" = [
-            { "Domain Controllers" = "installation-guides/os-installs/linux/fedora/hardware-specific/domain-controllers.md" },
+            { "Domain Controllers" = "installation-guides/os-installs/linux/fedora/hardware-specific/domain-controllers/domain-controllers.md" },
             { "Servers" = "installation-guides/os-installs/linux/fedora/hardware-specific/servers.md" },
             { "Virtual Machines" = "installation-guides/os-installs/linux/fedora/hardware-specific/vms.md" },
             { "Workstations" = "installation-guides/os-installs/linux/fedora/hardware-specific/workstations.md" }

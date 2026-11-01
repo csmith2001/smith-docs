@@ -2,7 +2,7 @@
 
 !!! warning
 
-    Please refer to the [previous guide](../os-media/fedora-everything.md) if
+    Please refer to the [previous guide](../../os-media/fedora-everything.md) if
     you have not installed Fedora Everything.
 
 As of now, the preferred distribution of choice is [Fedora](https://fedoraproject.org/).
@@ -15,8 +15,8 @@ above if you do not have it installed.
 
 ## Install Steps
 
-* Download, install, and flash USB drive with [Ventoy](../../../../tools/os-tools/ventoy.md)
-* Download and transfer [Fedora Everything](../os-media/fedora-everything.md)
+* Download, install, and flash USB drive with [Ventoy](../../../../../tools/os-tools/ventoy.md)
+* Download and transfer [Fedora Everything](../../os-media/fedora-everything.md)
   to Ventoy USB
 * Power down target device
 * Plug Ventoy USB into target device
