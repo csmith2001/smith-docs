@@ -16,36 +16,68 @@ edit_uri = "edit/main/docs/"
 # === PAGE NAVIGATION ===
 nav = [
   { "Home" = "index.md" },
+
   { "Getting Started" = [
-    { "5min Guides" =[
-      { "Markdown in 5min" = "markdown.md" },
-      { "Zensical in 5min" = "zensical.md" }
+    { "Overview" = "getting-started/index.md"},
+      { "Markdown" = [
+        { "Markdown in 5min" = "getting-started/markdown/markdown-cheatsheet.md" }
+      ]},
+    { "Zensical" = [
+      { "Zensical in 5min" = "getting-started/zensical/zensical-cheatsheet.md" }
+    ]}
+  ]},
+
+  { "Installation Guides" = [
+    { "Installation Guides" = "installation-guides/index.md"},
+    { "OS Installs" =[
+      { "Linux" = [
+        { "Linux" = "installation-guides/os-installs/linux/index.md" },
+        { "Fedora" = [
+          { "Fedora" = "installation-guides/os-installs/linux/fedora/index.md" },
+          { "OS Media" = [
+            { "Fedora Everything" = "installation-guides/os-installs/linux/fedora/os-media/fedora-everything.md" }
+          ]},
+          { "Hardware Specific Installs" = [
+            { "Domain Controllers" = "installation-guides/os-installs/linux/fedora/hardware-specific/domain-controllers.md" },
+            { "Servers" = "installation-guides/os-installs/linux/fedora/hardware-specific/servers.md" },
+            { "Virtual Machines" = "installation-guides/os-installs/linux/fedora/hardware-specific/vms.md" },
+            { "Workstations" = "installation-guides/os-installs/linux/fedora/hardware-specific/workstations.md" }
+          ]}
+        ]},
+        { "Debian" = [
+          { "Debian" = "installation-guides/os-installs/linux/debian/index.md"},
+          { "OS Media" = [
+            { "Debian Network Installer" = "installation-guides/os-installs/linux/debian/os-media/debian-netinst.md" }
+          ]}
+        ]}
+      ]},
     ]},
-    { "OS Installs" = [
-      { "Workstations" = "os-installations/workstation-os-install.md" },
-      { "Servers" = "os-installations/server-os-install.md" },
-      { "Virtual Machines" = "os-installations/vm-os-install.md" },
-      { "Domain Controllers" = "os-installations/domain-controller-os-install.md" }
-    ]},
+
     { "Tool Installs" = [
-      { "Ventoy" = "tool-installations/ventoy.md" },
-      { "VS Code" = "tool-installations/vs-code.md" }
+      { "OS Tools" = [
+        { "Ventoy" = "installation-guides/tools/os-tools/ventoy.md" }
+      ]},
+      { "Code Editors" = [
+        { "VS Code" = "installation-guides/tools/code-editors/vs-code.md" }
+      ]}
     ]},
   ]},
+
   { "Infrastructure" = [
-    { "Hardware" = [
-      { "Servers" = [
-        { "smith-lab-dc01" = "infrastructure/hardware/servers/smith-lab-dc01.md"},
-        { "smith-lab-app01" = "infrastructure/hardware/servers/smith-lab-app01.md"},
-        { "smith-lab-runner01" = "infrastructure/hardware/servers/smith-lab-runner01.md"}
-      ]},
-      { "Workstations" = [
-        { "fedora-desktop" = "infrastructure/hardware/workstations/fedora-desktop.md"},
-        { "fedora-laptop" = "infrastructure/hardware/workstations/fedora-laptop.md"}
-      ]},
-      { "Other" = [
-        { "Reolink NVR" = "infrastructure/hardware/other/reolink.md"}
-      ]}
+    { "Infrastructure" = "infrastructure/index.md"},
+    { "Domain Controllers" =[
+      { "DC01" = "infrastructure/domain-controllers/dc01.md" }
+    ]},
+    { "Servers" = [
+      { "APP01" = "infrastructure/servers/app01.md" },
+      { "RUNNER01" = "infrastructure/servers/runner01.md" }
+    ]},
+    { "Workstations" = [
+      { "Fedora Desktop" = "infrastructure/workstations/fedora-desktop.md" },
+      { "Fedora Laptop" = "infrastructure/workstations/fedora-laptop.md" }
+    ]},
+    { "Other" =[
+      { "Reolink NVR" = "infrastructure/other/reolink.md" }
     ]}
   ]}
 ]
@@ -120,6 +152,22 @@ toggle.name = "Switch to system preference"
 # -----------------------------------------------------------------
 # === SOCIALS ===
 [[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/christopher-smith-9365593a3/"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/instagram"
+link = "https://www.instagram.com/chriis.smith/"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/facebook"
+link = "https://www.facebook.com/cj.smth.1"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/@Christopher.Smith16"
+
+[[project.extra.social]]
 icon = "fontawesome/brands/gitlab"
 link = "https://gitlab.com/csmith2001"
 
@@ -134,11 +182,6 @@ link = "https://git.smith-lab.xyz"
 [[project.extra.social]]
 icon = "fontawesome/brands/git-alt"
 link = "https://invent.kde.org/csmithtwothousandone"
-
-[[project.extra.social]]
-icon = "fontawesome/brands/youtube"
-link = "https://www.youtube.com/@Christopher.Smith16"
-
 # -----------------------------------------------------------------
 # === EXTENSIONS ===
 [project.markdown_extensions]
