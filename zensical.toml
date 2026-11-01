@@ -98,7 +98,7 @@ nav = [
         ]}
       ]},
       { "Debian" = [
-        { "TODO" = "setup-guides/os-setups/debian/"}
+        { "TODO" = "setup-guides/os-setups/debian/first-boots/index.md"}
       ]}
     ]}
   ]}
