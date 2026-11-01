@@ -20,10 +20,13 @@ nav = [
   { "Getting Started" = [
     { "Overview" = "getting-started/index.md"},
       { "Markdown" = [
-        { "Markdown in 5min" = "getting-started/markdown/markdown-cheatsheet.md" }
+        { "Markdown in 5min" = "getting-started/markdown/index.md" }
       ]},
     { "Zensical" = [
-      { "Zensical in 5min" = "getting-started/zensical/zensical-cheatsheet.md" }
+      { "Zensical in 5min" = "getting-started/zensical/index.md" }
+    ]},
+    { "Mermaid" = [
+      { "Mermaid in 5min" = "getting-started/mermaid/index.md"}
     ]}
   ]},
 
