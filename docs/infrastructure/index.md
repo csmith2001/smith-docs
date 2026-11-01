@@ -57,8 +57,8 @@ Infrastructure documentation should answer:
 
 !!! tip
 
-    Infrastructure documentation should reflect the current deployed
+    * Infrastructure documentation should reflect the current deployed
     state whenever possible.
 
-    Planned architectures may be documented during design and updated
+    * Planned architectures may be documented during design and updated
     as implementation progresses.

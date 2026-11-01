@@ -89,11 +89,13 @@ pushed with `git`. We will only cover usage for GitLab.
 When a new commit is pushed to the default branch, the static
 site is automatically built and deployed.
 
-**Note:** By default, Gitlab Pages publishes to a domain that includes
-a random string. Untick the `Use unique domain` box in your Gitlab
-Pages settings for your production deployment. Also make sure to
-set the visibility for Pages under `Settings > General > Visibility`
-if you want a public site.
+!!! note
+
+    By default, Gitlab Pages publishes to a domain that includes
+    a random string. Untick the `Use unique domain` box in your Gitlab
+    Pages settings for your production deployment. Also make sure to
+    set the visibility for Pages under `Settings > General > Visibility`
+    if you want a public site.
 
 ---
 
@@ -127,7 +129,10 @@ The following icon sets are bundled with Zensical
 * [Octicons](https://octicons.github.com/)
 * [Simple Icons](https://simpleicons.org/)
 
-**Note:** You are not limited to these icons as you can add your own icons.
+!!! note
+
+    * You are not limited to these icons as you can add your own icons.
+    * Built-in icons can be found in the [.icons](https://github.com/squidfunk/mkdocs-material/tree/master/material/templates/.icons) directory
 
 ### Emojis
 
