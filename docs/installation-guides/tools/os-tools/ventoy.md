@@ -1,7 +1,6 @@
 ---
 icon: lucide/save-plus
 ---
-
 # Ventoy
 
 [Ventoy](https://www.ventoy.net/en/index.html) is an open source tool
@@ -27,92 +26,62 @@ media you want to boot into.
 ### Ventoy Site
 
 * Visit the [downloads](https://www.ventoy.net/en/download.html) page
-* Select the most recent binary:
-
-!!! example
-
-    ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-1.png)
+* Select the most recent binary
 
 ### Mirror Site
 
 * This will bring you to a SourceForge mirror site. Select the same versioned
-`tar.gz` file:
-
-!!! example
-
-    ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-2.png)
-
-* Expected result:
-
-!!! example
-
-    ![Ventoy Linux Tar Installation](../images/ventoy/ventoy-install-bin-3.png)
+  `tar.gz` file
 
 ---
 
 ## Configuration
 
 * Open a terminal (`CTRL` + `ALT` + `T`):
-
-!!! example
-
-    ![Terminal Opened](../images/common/open-terminal.png)
-
 * Extract the archive in `~/Downloads`:
 
-!!! example
-
-    ```shell
-      cd ~/Downloads
-      ls -lh
-      tar -xzf ventoy-*.tar.gz
-      rm -rf ventoy-*.tar.gz
-      ls -lh
-      cd ventoy-*
-    ```
-
-    ![Extract Archive](../images/ventoy/extract-archive.png)
+  ```shell
+    cd ~/Downloads
+    ls -lh
+    tar -xzf ventoy-*.tar.gz
+    rm -rf ventoy-*.tar.gz
+    ls -lh
+    cd ventoy-*
+  ```
 
 * Insert the USB drive
 * Identify the device:
 
-!!! example
-
-    ```shell
-      lsblk -f
-    ```
-
-    ![Find Block Devices](../images/common/find-usb.png)
+  ```shell
+    lsblk -f
+  ```
 
 * Switch to `csmith-admin` (don't include `-` to keep current `pwd`):
 
-!!! example
-
-    ```shell
-      su csmith-admin
-    ```
+  ```shell
+    su csmith-admin
+  ```
 
 * Run script:
 
-!!! example
-
-    ```shell
-      sudo ./Ventoy2Disk.sh -i /dev/sdX
-      exit
-    ```
-
-    ![Ventoy2Disk.sh](../images/ventoy/ventoy2disk.png)
+  ```shell
+    sudo ./Ventoy2Disk.sh -i /dev/sdX
+    exit
+  ```
 
 ## Validation
 
 * Validate partition layout:
 
-```shell
+  ```shell
   lsblk -f
-```
+  ```
 
 * Expected result:
 
-!!! example
-
-    ![Find Ventoy Media](../images/ventoy/find-ventoy.png)
+  ```Markdown
+  NAME                         FSTYPE  LABEL
+  sda        
+  ├─sda1                       exfat   Ventoy
+  └─sda2                       vfat    VTOYEFI
+  ```

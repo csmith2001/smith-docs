@@ -10,13 +10,11 @@ found in the [Zensical getting-started documentation](https://zensical.org/docs/
 
 ## Installation
 
-!!! example
-
-    ```Shell
-    python3 -m venv .venv
-    source .venv/bin/activate
-    pip install zensical
-    ```
+```Shell
+python3 -m venv .venv
+source .venv/bin/activate
+pip install zensical
+```
 
 ---
 
@@ -25,11 +23,9 @@ found in the [Zensical getting-started documentation](https://zensical.org/docs/
 After installing, you can bootstrap documentation using the
 `zensical` executable. In the project directory you are working in:
 
-!!! example
-
-    ```Shell
-    zensical new .
-    ```
+```Shell
+zensical new .
+```
 
 This creates the following structure:
 
@@ -49,7 +45,7 @@ This creates the following structure:
 
 ## Configuration
 
-!!! example "Zensical only requires site_name"
+!!! tip "Zensical only requires site_name"
 
     ```TOML
     [project]
@@ -277,23 +273,19 @@ Each of the supported types have distinct icons, which can be changed
 to any icon bundled with the theme, or a custom icon.
 Add the following lines to your configuration:
 
-!!! example
-
-    ```TOML
-    [project.theme.icon.admonition]
-    <type> = "<icon>"
-    ```
+```TOML
+[project.theme.icon.admonition]
+<type> = "<icon>"
+```
 
 #### Usage
 
 Admonition blocks start with `!!!`, followed by a single keyword.
 
-!!! example
+```Markdown
+!!! note
 
-    ```Markdown
-    !!! note
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-        nulla. Curabitur feugiat, tortor non consequat fibs, justo purus auctor
-        massa, nec semper lorem quam in massa.
-    ```
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat fibs, justo purus auctor
+    massa, nec semper lorem quam in massa.
+```
