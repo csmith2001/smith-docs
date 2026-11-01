@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------
 # === PROJECT CONFIGURATION ===
 [project]
-#site_url = "https:smith-lab.xyz/docs"
+site_url = "https://csmith2001.gitlab.io/smith-docs/"
 site_name = "Smith Lab Documentation"
 site_description = "Smith Lab project documentation, Home Lab docs, and more!"
 site_author = "Christopher Smith"
