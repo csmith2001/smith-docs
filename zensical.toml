@@ -32,7 +32,8 @@ nav = [
     ]},
     { "Learning" = [
       { "git" = [
-        { "Git Cheat Sheet" = "getting-started/learning/git/git-cheat-sheet.md" }
+        { "Git in 5min" = "getting-started/learning/git/git-overview.md" },
+        { "Holy Git" = "getting-started/learning/git/git-cheatsheet.md" }
       ]}
     ]}
   ]},

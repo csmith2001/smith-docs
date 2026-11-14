@@ -114,3 +114,79 @@ A file in a repository can be in one of several states:
 - `Staged`
 
 The `git status` command shows you the current state of your repo.
+
+- Use `git add <path-to-file>` to stage files for commits. (use `.` to add all files from current working directory)
+- Use `git commit` to commit staged files. (Add `-m` to add an in-line commit message)
+
+---
+
+## Git Log
+
+A git repo is a list of commits, and each commit represents the
+*full state of the repository* at a given point in time.
+
+The `git log` command shows a history of the commits in a repo. Here
+you will see a commit's author, hash, and date.
+
+### A commit hash
+
+Each commit has a unique identifier called a "commit hash". This is a long string
+of characters that uniquely identifies the commit. For convenience, you can refer
+to any commit by using the first `7` characters.
+
+A hash is a SHA-1 cryptographic hash.
+
+### Usage
+
+General syntax is as follows:
+
+```shell
+git log [<options>] [<revision-range>] [[--] <path>...]
+```
+
+Some common options used are:
+
+- `git log --oneline`
+- `git log --no-pager`
+- `git log -n <Number>`
+
+For an extensive list of options:
+
+```shell
+git log --help
+```
+
+Or:
+
+```shell
+man git log
+```
+
+### Git Objects
+
+All the data in git, commits, branches, tags, etc. are referred to as '`objects`'.
+
+Objects are stored in the `.git/objects` directory.
+
+Commits are a type of object that can be viewed within this directory using `cd` and `git cat-file`:
+
+```shell
+cd .git/objects/<first-two-sha-chars> &&
+git cat-file -p <commit-hash>
+```
+
+A `tree` is git's way of storing a directory. Notice however, we cannot see the contents of files.
+
+Notice that we can see:
+
+- The `tree` object
+- The `author`
+- The `committer`
+- The commit message
+
+This is because the `blob` object is what stores this:
+
+- A `blob` is git's way of storing a file, a.k.a. binary large object storage.
+
+If you run `git cat-file` on the hash of the `tree` object, you should now see
+the `blob` objects in this commit with their own hashes.

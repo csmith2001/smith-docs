@@ -12,7 +12,7 @@ Intended to be brief, to the point, reference guide. For more information, refer
 
 Mermaid is a JavaScript based diagramming tool that renders Markdown *inspired*
 text to create diagrams dynamically. You should already be familiar with using
-basic Markdown syntax from our [earlier guide](../markdown/index.md), but feel
+basic Markdown syntax from our [earlier guide](../markdown/markdown.md), but feel
 free to review in case a refresher is needed.
 
 I just like it because its more centralization, I can do everything in Markdown,
