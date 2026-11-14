@@ -1,3 +1,7 @@
+---
+icon: lucide/user-shield
+---
+
 # Domain Controller OS Install
 
 !!! warning
@@ -73,9 +77,9 @@ If reconfiguration is required:
 
 !!! example
 
-    | Host Name | Pool | NTS | Working |
-    |-----------|------|-----|---------|
-    | `2.fedora.pool.ntp.org` | :white_check_mark: | :cross_mark: | :white_check_mark: |
+| Host Name | Pool | NTS | Working |
+| --------- | ---- | --- | ------- |
+| `2.fedora.pool.ntp.org` | ✅ | :cross_mark: | ✅ |
 
 ---
 
@@ -119,31 +123,6 @@ For Domain Controller deployments, use the following settings:
 
 For a Domain controller, there are no strict storage requirements.
 
-!!! tip
-
-    Although there are no storage requirements, it is strongly recommended
-    to use at least 2 disks, and that they are connected in RAID1 mode for
-    data redundancy in the event of a DR scenario.
-
-###### Local Standard Disks
-
-* Choose the disks you intend to use.
-
-###### Specialized & Network Drives
-
-* Unless otherwise noted, assume none.
-
-###### Storage Configuration
-
-* Choose: **Advanced Custom (Blivet-GUI)**
-* Select **Done**
-
-###### Blivet GUI Partitioning
-
-!!! example "Example: dc01"
-
-    --8<-- "docs/infrastructure/domain-controllers/dc01-storage.md"
-
 ##### Network & Host Name
 
 !!! warning
@@ -153,7 +132,8 @@ For a Domain controller, there are no strict storage requirements.
 * Choose the default ethernet connection
 * Click **Configure**
 * Rename 'Connection name' to **lan**
-* Click **Save**
+* Leave IPv4 set to Automatic (DHCP)
+* Leave IPv6 set to Automatic
 
 Edit **Host Name**:
 
@@ -173,9 +153,9 @@ Leave as **Disabled**.
 * Full Name: `Domain Administrator`
 * User name: `lab-admin`
 * Password: `****`
-* :white_check_mark: Add administrative privileges to this user account
+* ✅ Add administrative privileges to this user account
   (wheel group membership)
-* :white_check_mark: Require a password to use this account
+* ✅ Require a password to use this account
 
 ---
 
