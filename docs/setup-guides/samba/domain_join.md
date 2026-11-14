@@ -155,6 +155,27 @@ Default principal: csmith@SMITH-LAB.XYZ
 
 ---
 
+## Edit sssd.conf
+
+```shell
+sudo nano /etc/sssd/sssd.conf
+```
+
+Edit:
+
+```text
+fallback_homedir = /home/%u 
+use_fully_qualified_names = false
+```
+
+Restart:
+
+```shell
+sudo systemctl restart sssd
+```
+
+---
+
 ## Verify User Resolution
 
 ```shell

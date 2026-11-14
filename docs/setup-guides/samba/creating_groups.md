@@ -21,3 +21,9 @@ sudo samba-tool group list
 ```shell
 sudo samba-tool group listmembers group
 ```
+
+## Remove a group
+
+```shell
+sudo samba-tool group delete group
+```

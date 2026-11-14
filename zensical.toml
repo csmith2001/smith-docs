@@ -19,14 +19,21 @@ nav = [
 
   { "Getting Started" = [
     { "Overview" = "getting-started/index.md"},
+    { "How this page was made" = [
       { "Markdown" = [
-        { "Markdown in 5min" = "getting-started/markdown/index.md" }
-      ]},
+      { "Markdown in 5min" = "getting-started/markdown/markdown.md" }
+    ]},
     { "Zensical" = [
-      { "Zensical in 5min" = "getting-started/zensical/index.md" }
+      { "Zensical in 5min" = "getting-started/zensical/zensical.md" }
     ]},
     { "Mermaid" = [
-      { "Mermaid in 5min" = "getting-started/mermaid/index.md"}
+      { "Mermaid in 5min" = "getting-started/mermaid/mermaid.md"}
+    ]},
+    ]},
+    { "Learning" = [
+      { "git" = [
+        { "Git Cheat Sheet" = "getting-started/learning/git/git-cheat-sheet.md" }
+      ]}
     ]}
   ]},
 
@@ -108,18 +115,41 @@ nav = [
       { "Fedora" = [
         { "First Boot" = [
           { "Domain Controllers" = [
-            { "DC First Boot" = "setup-guides/os-setups/fedora/first-boots/domain-controllers/index.md" }
+            { "DC First Boot" = "setup-guides/os-setups/fedora/first-boots/domain-controllers/dc-servers.md" }
           ]},
+          { "Servers" = [
+            { "App Server First Boot" = "setup-guides/os-setups/fedora/first-boots/servers/app-servers.md" }
+          ]}
         ]},
-        { "Samba" = [
-          { "Creating Users" = "setup-guides/os-setups/fedora/samba/creating_users.md" },
-          { "Creating Groups" = "setup-guides/os-setups/fedora/samba/creating_groups.md" },
-          { "Setting Up SMB" = "setup-guides/os-setups/fedora/samba/creating_smb.md" },
-          { "Joining a Domain" = "setup-guides/os-setups/fedora/samba/domain_join.md" }
+        { "Cockpit" = [
+          { "Useful Information" = [
+            { "Cockpit Configs" = "setup-guides/os-setups/fedora/cockpit-configs/cockpit.md" }
+          ]}
         ]}
       ]},
       { "Debian" = [
         { "TODO" = "setup-guides/os-setups/debian/first-boots/index.md"}
+      ]}
+    ]},
+    { " Routing" = [
+      { "TP-Link" = [
+        { "Primary Router" = "setup-guides/routing/tp-link/er707-m2.md" }
+      ]}
+    ]},
+    { "Samba" = [
+      { "Samba Guides" = [
+      { "Creating Users" = "setup-guides/samba/creating_users.md" },
+      { "Creating Groups" = "setup-guides/samba/creating_groups.md" },
+      { "Setting Up SMB" = "setup-guides/samba/creating_smb.md" },
+      { "Joining a Domain" = "setup-guides/samba/domain_join.md" }
+      ]}
+    ]},
+    { "Services" = [
+      { "Caddy" = [
+        { "Setup" = "setup-guides/services/caddy/caddy.md" },
+      ]},
+      { "Vaultwarden" = [
+        { "Setup" = "setup-guides/services/vaultwarden/vaultwarden.md" }
       ]}
     ]}
   ]}

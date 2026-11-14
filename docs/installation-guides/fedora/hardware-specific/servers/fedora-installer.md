@@ -138,7 +138,7 @@ flowchart TD
 
     subgraph MOUNTS["Boot partitions"]
       EFI["/boot/efi<br/>EFI partition<br/>1GB"]
-      BOOT["/boot<br/>ext4<br/>2GBa"]
+      BOOT["/boot<br/>ext4<br/>2GB"]
     end
 
     subgraph FILESYSTEMS["Btrfs filesystems"]
