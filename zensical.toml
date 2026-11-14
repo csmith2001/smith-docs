@@ -33,44 +33,56 @@ nav = [
   { "Infrastructure" = [
     { "Infrastructure" = "infrastructure/index.md"},
     { "Domain Controllers" =[
-      { "DC01" = "infrastructure/domain-controllers/dc01.md" }
+      { "On Premises" = [
+        { "DC01" = "infrastructure/domain-controllers/dc01.md" }
+      ]}
     ]},
     { "Servers" = [
-      { "APP01" = "infrastructure/servers/app01.md" },
-      { "RUNNER01" = "infrastructure/servers/runner01.md" }
+      { "On Premises" = [
+        { "APP01" = "infrastructure/servers/app01.md" },
+        { "RUNNER01" = "infrastructure/servers/runner01.md" }
+      ]}
     ]},
     { "Workstations" = [
-      { "Fedora Desktop" = "infrastructure/workstations/fedora-desktop.md" },
-      { "Fedora Laptop" = "infrastructure/workstations/fedora-laptop.md" }
+      { "List of Workstations" = [
+        { "Fedora Desktop" = "infrastructure/workstations/fedora-desktop.md" },
+        { "Fedora Laptop" = "infrastructure/workstations/fedora-laptop.md" }
+      ]}
     ]},
     { "Other" =[
-      { "Reolink NVR" = "infrastructure/other/reolink.md" }
+      { "List of Other Devices" = [
+        { "Reolink NVR" = "infrastructure/other/reolink.md" }
+      ]}
     ]}
   ]},
 
   { "Installation Guides" = [
     { "Fedora" = [
       { "OS Media" = [
-        { "Media Installation" = "installation-guides/fedora/os-media/index.md" }
+        { "Fedora Everything Installer" = [
+          { "Media Installation" = "installation-guides/fedora/os-media/index.md" }
+        ]}
       ]},
       { "Hardware Specific Installs" = [
         { "Domain Controllers" = [
-          { "DC Install Guide" = "installation-guides/fedora/hardware-specific/domain-controllers/index.md" },
+          { "DC Install Guide" = "installation-guides/fedora/hardware-specific/domain-controllers/fedora-installer.md" },
         ]},
         { "Servers" = [
-          { "Server Install Guide" = "installation-guides/fedora/hardware-specific/servers/index.md" }
+          { "Server Install Guide" = "installation-guides/fedora/hardware-specific/servers/fedora-installer.md" }
         ]},
         { "Virtual Machines" = [
-          { "VM Install Guide" = "installation-guides/fedora/hardware-specific/virtual-machines/index.md" }
+          { "VM Install Guide" = "installation-guides/fedora/hardware-specific/virtual-machines/vm-install.md" }
         ]},
         { "Workstations" = [
-          { "Workstation Install Guide" = "installation-guides/fedora/hardware-specific/workstations/index.md" }
+          { "Workstation Install Guide" = "installation-guides/fedora/hardware-specific/workstations/fedora-installer.md" }
         ]},
       ]}
     ]},
     { "Debian" = [
       { "OS Media" = [
-        { "Media Installation" = "installation-guides/debian/os-media/index.md" }
+        { "Debian Network Installer" = [
+          { "Media Installation" = "installation-guides/debian/os-media/index.md" }
+        ]}
       ]},
     ]},
     { "Tools" = [
@@ -98,6 +110,12 @@ nav = [
           { "Domain Controllers" = [
             { "DC First Boot" = "setup-guides/os-setups/fedora/first-boots/domain-controllers/index.md" }
           ]},
+        ]},
+        { "Samba" = [
+          { "Creating Users" = "setup-guides/os-setups/fedora/samba/creating_users.md" },
+          { "Creating Groups" = "setup-guides/os-setups/fedora/samba/creating_groups.md" },
+          { "Setting Up SMB" = "setup-guides/os-setups/fedora/samba/creating_smb.md" },
+          { "Joining a Domain" = "setup-guides/os-setups/fedora/samba/domain_join.md" }
         ]}
       ]},
       { "Debian" = [

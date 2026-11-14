@@ -177,6 +177,10 @@ classDiagram
         -int sizeInFeet
         -canEat()
     }
+    class Bear{
+        -int sizeInFeet
+        -canEat()
+    }
 ```
 
 !!! example
